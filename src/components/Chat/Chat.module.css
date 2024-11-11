@@ -1,0 +1,237 @@
+.chat {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #2b2f33;
+  color: #e0e0e0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Верхняя панель с заголовком */
+.chatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #343a40;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: 1px solid #454b52;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.userInfo:hover {
+  opacity: 0.85;
+}
+
+.headerAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  margin-right: 10px;
+  border: 2px solid #ffffff;
+}
+
+.signOutButton {
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background: #e57373;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signOutButton:hover {
+  background-color: #d64c4c;
+}
+
+.chatMessages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #2b2f33;
+  scrollbar-width: thin;
+  scrollbar-color: #555 transparent;
+}
+
+.chatMessages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chatMessages::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 3px;
+}
+
+/* Общий стиль сообщений */
+.chatMessage {
+  display: flex;
+  align-items: flex-start;
+  padding: 12px 16px;
+  margin: 10px 0;
+  max-width: 100%;
+  border-radius: 6px;
+  background: #3a3f45;
+  color: #d1d1d1;
+  border: 1px solid #454b52;
+}
+
+/* Сообщения текущего пользователя */
+.myMessage {
+  background: #4e8dbd;
+  color: #ffffff;
+}
+
+.otherMessage {
+  background-color: #3a3f45;
+  color: #e0e0e0;
+}
+
+/* Аватарка для сообщения */
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  margin-right: 10px;
+  border: 1px solid #4a4f57;
+}
+
+/* Контейнер для текста сообщения и информации о пользователе */
+.messageContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.chatMessageHeader {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #b0b0b0;
+  margin-bottom: 4px;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: #8f8f8f;
+  margin-left: 8px;
+}
+
+.messageText {
+  font-size: 1rem;
+  color: inherit;
+}
+
+/* Меню для редактирования и удаления */
+.messageMenu {
+  display: flex;
+  margin-top: 5px;
+}
+
+.menuButton {
+  background: none;
+  color: #f0ad4e;
+  border: none;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+  transition: color 0.3s ease;
+}
+
+.menuButton:hover {
+  color: #ec971f;
+}
+
+.chatInputContainer {
+  display: flex;
+  padding: 15px 20px;
+  background-color: #343a40;
+  border-top: 1px solid #454b52;
+}
+
+.chatInput {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #4b4f58;
+  border-radius: 6px;
+  background-color: #454b52;
+  color: #d1d1d1;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.chatInput:focus {
+  border-color: #4a90e2;
+}
+
+.chatSend {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #ffffff;
+  background: #4a90e2;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.chatSend:hover {
+  background-color: #357ae8;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.profilePopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #3a3f45;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  width: 320px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.closeButton:hover {
+  color: #ff5555;
+}
+
+@media (max-width: 480px) {
+  .profilePopup {
+    width: 90%; 
+    padding: 20px;
+  }
+}
