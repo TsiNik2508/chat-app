@@ -4,4 +4,28 @@
   flex-direction: column;
   background: #121212;
   color: #ffffff;
+
+  @media (max-width: 768px) {
+      height: auto; 
+  }
+
+  @media (max-width: 480px) {
+      background: #181818; 
+      font-size: 14px; 
+  }
+
+  @media (max-width: 396px) {
+      background: #202020; 
+      font-size: 12px; 
+      padding: 8px; 
+
+      .app__placeholder {
+          font-size: 14px; 
+          text-align: center;
+      }
+
+      .app__header {
+          padding: 8px; 
+      }
+  }
 }
