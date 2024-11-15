@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# ChatApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ChatApp — это современное веб-приложение для обмена сообщениями в реальном времени, где пользователи могут авторизоваться через Google, редактировать профиль, отправлять и редактировать сообщения.
 
-## Available Scripts
+## Функционал
 
-In the project directory, you can run:
+- **Авторизация через Google**
+- **Редактирование профиля**
+  - Изменение имени и аватара.
+  - Анимация и стиль при редактировании аватара.
+- **Отправка сообщений**
+  - Сообщения отображаются в реальном времени.
+  - Возможность редактировать и удалять свои сообщения.
+- **Выход из аккаунта**
+- Стильное оформление, адаптированное для тёмной темы.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Стек технологий
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React** — библиотека для создания пользовательского интерфейса.
+- **Firebase**:
+  - **Authentication** — для входа через Google.
+  - **Realtime Database** — для хранения сообщений в реальном времени.
+- **SCSS** — для стилизации компонентов.
+- **ESLint** — для обеспечения качества кода.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Установка и запуск
 
-### `npm run build`
+### 1. Клонирование репозитория
+```bash
+git clone https://github.com/TsiNik2508/chat-app.git
+cd chat-app
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Установка зависимостей
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Запуск приложения
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Откройте приложение в браузере по адресу: [http://localhost:3000](http://localhost:3000).
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Структура проекта
+```
+src/
+├── components/
+│   ├── Chat/
+│   │   ├── Chat.jsx
+│   │   ├── Chat.scss
+│   ├── Header/
+│   │   ├── Header.jsx
+│   │   ├── Header.scss
+│   ├── Message/
+│   │   ├── Message.jsx
+│   │   ├── Message.scss
+│   ├── Profile/
+│   │   ├── Profile.jsx
+│   │   ├── Profile.scss
+├── firebase.js
+├── App.jsx
+├── App.scss
+└── index.js
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Зависимости
+- **React**: ^18.0.0
+- **Firebase**: ^9.0.0
+- **Sass**: ^1.0.0
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Автор
+- Никита [GitHub](https://github.com/TsiNik2508) | [LinkedIn](https://www.linkedin.com/in/nikita-tsilosani-5367782b4) | [Email](mailto:nikitaandr2508@gmail.com)
