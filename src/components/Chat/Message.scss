@@ -111,3 +111,32 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .message__avatar {
+        width: 35px;
+        height: 35px;
+    }
+
+    .message__text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .message__text {
+        font-size: 11px;
+    }
+
+    .message__actions {
+        .message__button {
+            width: 35px;
+            height: 35px;
+
+            .message__icon {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}

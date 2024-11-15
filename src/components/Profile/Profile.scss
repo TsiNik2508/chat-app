@@ -121,3 +121,51 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .profile__content {
+        max-width: 90%;
+        border-radius: 12px;
+        padding: 24px;
+    }
+
+    .profile__title {
+        font-size: 18px;
+    }
+
+    .profile__actions {
+        flex-direction: column;
+
+        .profile__button {
+            width: 100%;
+            margin-bottom: 12px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .profile__content {
+        padding: 16px;
+    }
+
+    .profile__title {
+        font-size: 16px;
+    }
+
+    .profile__actions {
+        flex-direction: column;
+
+        .profile__button {
+            width: 100%;
+        }
+    }
+
+    .profile__input {
+        padding: 10px;
+        font-size: 12px;
+    }
+}

@@ -78,3 +78,42 @@
             }
     }
 }
+
+@media (max-width: 768px) {
+    .chat__form {
+
+        &__input {
+            margin-bottom: 12px;
+            padding: 10px;
+            font-size: 12px;
+        }
+
+        &__button {
+            width: 100%;
+            font-size: 12px;
+        }
+    }
+
+    .chat__messages {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chat__form {
+        padding: 8px;
+
+        &__input {
+            font-size: 11px;
+        }
+
+        &__button {
+            font-size: 11px;
+        }
+    }
+
+    .chat__messages {
+        padding: 8px;
+    }
+}
+
